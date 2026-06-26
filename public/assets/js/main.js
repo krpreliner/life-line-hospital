@@ -158,26 +158,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Testimonials Slider ---
     const testiSlider = document.getElementById('testi-slider');
-    const dots = document.querySelectorAll('.slider-dots .dot');
-    let currentSlide = 0;
-    const totalSlides = dots.length;
+    if (testiSlider) {
+        const dots = document.querySelectorAll('.slider-dots .dot');
+        let currentSlide = 0;
+        const totalSlides = dots.length;
 
-    function goToSlide(index) {
-        testiSlider.style.transform = `translateX(-${index * 100}%)`;
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
-        currentSlide = index;
+        function goToSlide(index) {
+            testiSlider.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
+
+        // Auto slide
+        setInterval(() => {
+            let nextSlide = (currentSlide + 1) % totalSlides;
+            goToSlide(nextSlide);
+        }, 5000);
     }
-
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => goToSlide(index));
-    });
-
-    // Auto slide
-    setInterval(() => {
-        let nextSlide = (currentSlide + 1) % totalSlides;
-        goToSlide(nextSlide);
-    }, 5000);
 
     // --- Gallery Filter ---
     const filterBtns = document.querySelectorAll('.filter-btn');
