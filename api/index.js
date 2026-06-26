@@ -10,8 +10,6 @@ app.use(cors());
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files (HTML, CSS, JS) from the current directory
-app.use(express.static(path.join(__dirname)));
 
 // API Route: Contact Form Submission
 app.post('/api/contact', (req, res) => {
