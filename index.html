@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Line Multispeciality Hospital | Advanced Healthcare in Dhamtari</title>
+    <meta name="description" content="Life Line Multispeciality Hospital in Kurud, Dhamtari offers multi-speciality care, experienced doctors, modern diagnostics, and affordable treatments.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Life Line Multispeciality Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "College Road",
+        "addressLocality": "Kurud, District Dhamtari",
+        "addressRegion": "Chhattisgarh"
+      },
+      "telephone": "73750-21000",
+      "isAccessibleForFree": "false"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <i class="ph ph-heartbeat heartbeat-icon"></i>
+            <h2>Life Line</h2>
+            <p>Multispeciality Hospital</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="ph-fill ph-cross icon-logo"></i>
+                <div class="logo-text">
+                    <span class="brand-name">Life Line</span>
+                    <span class="brand-tag">Multispeciality Hospital</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#departments" class="nav-link">Departments</a></li>
+                    <li><a href="#specialists" class="nav-link">Doctors</a></li>
+                    <li><a href="#mega-camp" class="nav-link highlight">Health Camp</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary nav-btn" onclick="openAppointmentModal()">Book Appointment</button>
+                <button class="mobile-menu-toggle" id="mobile-toggle"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-video-wrapper">
+            <video src="assets/videos/hero.mp4" class="hero-bg" autoplay loop muted playsinline></video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text reveal-up">
+                <div class="badge">Trust & Compassion</div>
+                <h1 class="hero-title">Advanced Healthcare With <span>Compassion & Excellence</span></h1>
+                <p class="hero-subtitle">Multi-Speciality Care • Experienced Doctors • Modern Diagnostics • Affordable Treatments</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large ripple" onclick="openAppointmentModal()">Book Appointment</button>
+                    <a href="tel:7375021000" class="btn btn-emergency ripple"><i class="ph-fill ph-phone-call"></i> Emergency Call</a>
+                </div>
+            </div>
+            
+            <div class="hero-floating-cards">
+                <div class="float-card card-1 reveal-fade">
+                    <i class="ph-fill ph-stethoscope icon-green"></i>
+                    <span>Experienced Specialists</span>
+                </div>
+                <div class="float-card card-2 reveal-fade" style="transition-delay: 0.1s">
+                    <i class="ph-fill ph-microscope icon-blue"></i>
+                    <span>Modern Equipment</span>
+                </div>
+                <div class="float-card card-3 reveal-fade" style="transition-delay: 0.2s">
+                    <i class="ph-fill ph-heart icon-red"></i>
+                    <span>Trusted Patient Care</span>
+                </div>
+                <div class="float-card card-4 reveal-fade" style="transition-delay: 0.3s">
+                    <i class="ph-fill ph-wallet icon-orange"></i>
+                    <span>Affordable Healthcare</span>
+                </div>
+            </div>
+        </div>
+        <!-- Animated Background Heartbeat Line -->
+        <div class="bg-heartbeat"></div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-images reveal-left">
+                <div class="image-collage">
+                    <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=800" alt="Hospital Building" class="img-main">
+                    <img src="https://images.unsplash.com/photo-1551076805-e18690c5e53b?q=80&w=600" alt="Doctors Team" class="img-sub glass-panel">
+                    <div class="floating-stat glass-card">
+                        <div class="stat-icon"><i class="ph-fill ph-users"></i></div>
+                        <div class="stat-info">
+                            <h3 class="counter" data-target="5000">0</h3>
+                            <span>Happy Patients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal-right">
+                <div class="section-heading">
+                    <span class="sub-title">About Us</span>
+                    <h2>Life Line Multispeciality Hospital</h2>
+                </div>
+                <p>Welcome to Life Line Multispeciality Hospital, Dhamtari's premier destination for advanced healthcare. We are committed to providing exceptional medical services with compassion and excellence.</p>
+                <ul class="feature-list">
+                    <li><i class="ph-fill ph-check-circle"></i> Patient-Centered Care</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Modern Medical Equipment</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Experienced Doctors</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Affordable Treatment</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Emergency Support</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Clean & Comfortable Environment</li>
+                </ul>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="20">0</h3><span class="plus">+</span>
+                        <p>Medical Services</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="10">0</h3><span class="plus">+</span>
+                        <p>Specialists</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>24×7</h3>
+                        <p>Patient Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding bg-light" id="why-us">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Our Advantages</span>
+                <h2>Why Choose Life Line?</h2>
+            </div>
+            <div class="grid-container cards-grid">
+                <div class="premium-card reveal-up">
+                    <div class="card-icon"><i class="ph-fill ph-user-md"></i></div>
+                    <h3>Experienced Doctors</h3>
+                </div>
+                <div class="premium-card reveal-up" style="transition-delay: 0.1s">
+                    <div class="card-icon"><i class="ph-fill ph-flask"></i></div>
+                    <h3>Modern Diagnostic Facilities</h3>
+                </div>
+                <div class="premium-card reveal-up" style="transition-delay: 0.2s">
+                    <div class="card-icon"><i class="ph-fill ph-currency-inr"></i></div>
+                    <h3>Affordable Healthcare</h3>
+                </div>
+                <div class="premium-card reveal-up" style="transition-delay: 0.3s">
+                    <div class="card-icon"><i class="ph-fill ph-hand-heart"></i></div>
+                    <h3>Personalized Treatment</h3>
+                </div>
+                <div class="premium-card reveal-up" style="transition-delay: 0.4s">
+                    <div class="card-icon"><i class="ph-fill ph-ambulance"></i></div>
+                    <h3>Emergency Care</h3>
+                </div>
+                <div class="premium-card reveal-up" style="transition-delay: 0.5s">
+                    <div class="card-icon"><i class="ph-fill ph-cpu"></i></div>
+                    <h3>Advanced Technology</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="departments section-padding" id="departments">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Specialities</span>
+                <h2>Our Departments</h2>
+            </div>
+            <div class="department-grid">
+                <div class="dept-card reveal-scale">
+                    <i class="ph-fill ph-heartbeat"></i>
+                    <h3>Cardiology</h3>
+                    <p>Advanced heart care and diagnostics.</p>
+                </div>
+                <div class="dept-card reveal-scale" style="transition-delay: 0.1s">
+                    <i class="ph-fill ph-baby"></i>
+                    <h3>Women's Health & Gynecology</h3>
+                    <p>Comprehensive maternity and women's health.</p>
+                </div>
+                <div class="dept-card reveal-scale" style="transition-delay: 0.2s">
+                    <i class="ph-fill ph-bone"></i>
+                    <h3>Orthopedics</h3>
+                    <p>Expert care for bones and joints.</p>
+                </div>
+                <div class="dept-card reveal-scale" style="transition-delay: 0.3s">
+                    <i class="ph-fill ph-eye"></i>
+                    <h3>Eye Care</h3>
+                    <p>Specialized vision and eye treatments.</p>
+                </div>
+                <div class="dept-card reveal-scale" style="transition-delay: 0.4s">
+                    <i class="ph-fill ph-first-aid"></i>
+                    <h3>General Medicine</h3>
+                    <p>Complete primary care and wellness.</p>
+                </div>
+                <div class="dept-card reveal-scale" style="transition-delay: 0.5s">
+                    <i class="ph-fill ph-microscope"></i>
+                    <h3>Diagnostics</h3>
+                    <p>State-of-the-art pathology & imaging.</p>
+                </div>
+                <div class="dept-card reveal-scale" style="transition-delay: 0.6s">
+                    <i class="ph-fill ph-shield-plus"></i>
+                    <h3>Preventive Health</h3>
+                    <p>Complete body checkup packages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mega Free Health Camp -->
+    <section class="mega-camp section-padding" id="mega-camp">
+        <div class="container">
+            <div class="camp-wrapper glassmorphism reveal-up">
+                <div class="camp-content">
+                    <span class="camp-badge blink">Special Event</span>
+                    <h2>Mega Free Health Camp</h2>
+                    
+                    <div class="camp-details">
+                        <div class="detail-item">
+                            <i class="ph-fill ph-calendar-blank"></i>
+                            <div>
+                                <strong>Date</strong>
+                                <span>05 July 2026</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ph-fill ph-clock"></i>
+                            <div>
+                                <strong>Time</strong>
+                                <span>10:00 AM – 5:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ph-fill ph-map-pin"></i>
+                            <div>
+                                <strong>Venue</strong>
+                                <span>Life Line Multispeciality Hospital<br>College Road, Kurud</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="countdown" id="countdown">
+                        <div class="cd-box"><span id="cd-days">00</span><p>Days</p></div>
+                        <div class="cd-box"><span id="cd-hours">00</span><p>Hours</p></div>
+                        <div class="cd-box"><span id="cd-mins">00</span><p>Minutes</p></div>
+                        <div class="cd-box"><span id="cd-secs">00</span><p>Seconds</p></div>
+                    </div>
+                    
+                    <button class="btn btn-secondary btn-large pulse-animation">Register Now</button>
+                </div>
+                
+                <div class="camp-offers">
+                    <h3>Free Services Included</h3>
+                    <div class="offer-badges">
+                        <span class="offer-badge"><i class="ph-fill ph-check-circle"></i> FREE OPD Consultation</span>
+                        <span class="offer-badge"><i class="ph-fill ph-check-circle"></i> FREE BP Check</span>
+                        <span class="offer-badge"><i class="ph-fill ph-check-circle"></i> FREE Sugar Test</span>
+                        <span class="offer-badge"><i class="ph-fill ph-check-circle"></i> FREE Nebulization</span>
+                    </div>
+
+                    <div class="discount-section mt-4">
+                        <h3 class="discount-title">50% Discount Services</h3>
+                        <div class="discount-cards">
+                            <div class="d-card"><div class="ribbon">50% OFF</div>Blood Test</div>
+                            <div class="d-card"><div class="ribbon">50% OFF</div>Urine Test</div>
+                            <div class="d-card"><div class="ribbon">50% OFF</div>X-Ray</div>
+                            <div class="d-card"><div class="ribbon">50% OFF</div>Ultrasound</div>
+                            <div class="d-card"><div class="ribbon">50% OFF</div>Endoscopy</div>
+                            <div class="d-card"><div class="ribbon">50% OFF</div>2D Echo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Specialists -->
+    <section class="specialists section-padding bg-light" id="specialists">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Expert Care</span>
+                <h2>Meet Our Specialists</h2>
+            </div>
+            
+            <div class="doctor-carousel" id="doctorCarousel">
+                <!-- Dr 1 -->
+                <div class="doctor-card reveal-up">
+                    <div class="doc-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400" alt="Dr. Shivam Madan Pandey">
+                        <div class="doc-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openAppointmentModal()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Dr. Shivam Madan Pandey</h3>
+                        <p class="doc-specialty">Cardiology</p>
+                        <p class="doc-degree">MBBS, MD Medicine, FCGP, FACC</p>
+                    </div>
+                </div>
+                
+                <!-- Dr 2 -->
+                <div class="doctor-card reveal-up" style="transition-delay: 0.1s">
+                    <div class="doc-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1594824436951-7f12bc31f609?q=80&w=400" alt="Dr. Gurpreet Kaur">
+                        <div class="doc-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openAppointmentModal()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Dr. Gurpreet Kaur</h3>
+                        <p class="doc-specialty">Gynecologist</p>
+                        <p class="doc-degree">MS</p>
+                    </div>
+                </div>
+
+                <!-- Dr 3 -->
+                <div class="doctor-card reveal-up" style="transition-delay: 0.2s">
+                    <div class="doc-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400" alt="Dr. Piyush Shukla">
+                        <div class="doc-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openAppointmentModal()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Dr. Piyush Shukla</h3>
+                        <p class="doc-specialty">Orthopedic Surgeon</p>
+                        <p class="doc-degree">MS</p>
+                    </div>
+                </div>
+
+                <!-- Dr 4 -->
+                <div class="doctor-card reveal-up" style="transition-delay: 0.3s">
+                    <div class="doc-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=400" alt="Dr. Yogesh Sahu">
+                        <div class="doc-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openAppointmentModal()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Dr. Yogesh Sahu</h3>
+                        <p class="doc-specialty">General Physician</p>
+                        <p class="doc-degree">MBBS</p>
+                    </div>
+                </div>
+
+                <!-- Dr 5 -->
+                <div class="doctor-card reveal-up" style="transition-delay: 0.4s">
+                    <div class="doc-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400" alt="Dr. Neha Bajpai">
+                        <div class="doc-overlay">
+                            <button class="btn btn-primary btn-sm" onclick="openAppointmentModal()">Book Appointment</button>
+                        </div>
+                    </div>
+                    <div class="doc-info">
+                        <h3>Dr. Neha Bajpai (Pandey)</h3>
+                        <p class="doc-specialty">Eye Specialist</p>
+                        <p class="doc-degree">MBBS, MS Ophthalmology<br>Retina & Phaco Surgeon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities section-padding" id="facilities">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Infrastructure</span>
+                <h2>World-Class Facilities</h2>
+            </div>
+            
+            <div class="facility-grid">
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-flask"></i><span>Modern Laboratory</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-monitor-heart"></i><span>Digital X-Ray</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-waveform"></i><span>Ultrasound</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-activity"></i><span>ECG & 2D Echo</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-ambulance"></i><span>Emergency Care</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-pill"></i><span>Pharmacy</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-armchair"></i><span>Waiting Lounge</span></div>
+                <div class="fac-card reveal-scale"><i class="ph-fill ph-car"></i><span>Ample Parking</span></div>
+                <div class="fac-card reveal-scale highlight-fac"><i class="ph-fill ph-credit-card"></i><span>Cashless Facility</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Journey Timeline -->
+    <section class="timeline-section section-padding bg-light" id="journey">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Process</span>
+                <h2>Patient Journey</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="tl-icon"><i class="ph-fill ph-calendar-plus"></i></div>
+                    <div class="tl-content">
+                        <h3>Appointment</h3>
+                        <p>Book easily online or via call.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="tl-icon"><i class="ph-fill ph-stethoscope"></i></div>
+                    <div class="tl-content">
+                        <h3>Consultation</h3>
+                        <p>Meet our expert specialists.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="tl-icon"><i class="ph-fill ph-microscope"></i></div>
+                    <div class="tl-content">
+                        <h3>Diagnosis</h3>
+                        <p>Advanced tests for accurate results.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="tl-icon"><i class="ph-fill ph-bandaids"></i></div>
+                    <div class="tl-content">
+                        <h3>Treatment</h3>
+                        <p>Personalized and modern care.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="tl-icon"><i class="ph-fill ph-smiley"></i></div>
+                    <div class="tl-content">
+                        <h3>Recovery</h3>
+                        <p>Follow-up care and full wellness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Reviews -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Feedback</span>
+                <h2>What Our Patients Say</h2>
+                <div class="google-rating">
+                    <i class="ph-fill ph-google-logo text-google"></i>
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <strong>4.9/5</strong> (1000+ Happy Patients)
+                </div>
+            </div>
+            
+            <div class="testi-carousel-wrapper reveal-up">
+                <div class="testi-carousel" id="testi-slider">
+                    <div class="testi-card">
+                        <i class="ph-fill ph-quotes"></i>
+                        <p>"Excellent hospital with very cooperative staff. The doctors are highly experienced and gave the best treatment for my father's heart condition."</p>
+                        <div class="patient-info">
+                            <div class="p-avatar">R</div>
+                            <div>
+                                <h4>Rahul Sharma</h4>
+                                <span>Patient Family</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card">
+                        <i class="ph-fill ph-quotes"></i>
+                        <p>"The best multispeciality hospital in Dhamtari. Very clean environment and advanced equipment. Cashless facility made our experience smooth."</p>
+                        <div class="patient-info">
+                            <div class="p-avatar">S</div>
+                            <div>
+                                <h4>Sneha Patel</h4>
+                                <span>Patient</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card">
+                        <i class="ph-fill ph-quotes"></i>
+                        <p>"Visited during the free mega camp. Very well organized and the doctors were very patient. Great initiative for the community."</p>
+                        <div class="patient-info">
+                            <div class="p-avatar">A</div>
+                            <div>
+                                <h4>Amit Verma</h4>
+                                <span>Camp Visitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section-padding bg-light" id="gallery">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Inside Life Line</span>
+                <h2>Hospital Gallery</h2>
+            </div>
+            
+            <div class="gallery-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hospital">Hospital</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+            
+            <div class="masonry-gallery reveal-up">
+                <div class="gallery-item hospital"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600" alt="Building"></div>
+                <div class="gallery-item facilities"><img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?q=80&w=600" alt="Lab"></div>
+                <div class="gallery-item hospital"><img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=600" alt="Reception"></div>
+                <div class="gallery-item events"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600" alt="Camp"></div>
+                <div class="gallery-item facilities"><img src="https://images.unsplash.com/photo-1551076805-e18690c5e53b?q=80&w=600" alt="OT"></div>
+                <div class="gallery-item hospital"><img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600" alt="Room"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="sub-title">Support</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-accordion reveal-up">
+                <div class="faq-item">
+                    <div class="faq-question">How do I book an appointment? <i class="ph ph-caret-down"></i></div>
+                    <div class="faq-answer"><p>You can book an appointment by calling our helpline at 73750-21000 or by clicking the 'Book Appointment' button on our website.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer emergency services 24/7? <i class="ph ph-caret-down"></i></div>
+                    <div class="faq-answer"><p>Yes, our emergency care and pharmacy services are open 24x7 to handle all medical emergencies.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are cashless insurance facilities available? <i class="ph ph-caret-down"></i></div>
+                    <div class="faq-answer"><p>Yes, we tie up with major health insurance providers to offer smooth cashless hospitalization facilities.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is included in the Free Mega Health Camp? <i class="ph ph-caret-down"></i></div>
+                    <div class="faq-answer"><p>The camp includes Free OPD, BP check, Sugar test, Nebulization, and a flat 50% discount on tests like Blood, Urine, X-Ray, Ultrasound, and 2D Echo.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="contact section-padding bg-light" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container glass-card reveal-left">
+                    <div class="section-heading">
+                        <span class="sub-title">Get in Touch</span>
+                        <h2>Send us a Message</h2>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container reveal-right">
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="icon-circle"><i class="ph-fill ph-map-pin"></i></div>
+                            <div>
+                                <h4>Hospital Address</h4>
+                                <p>College Road, Kurud,<br>District Dhamtari, Chhattisgarh</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-circle"><i class="ph-fill ph-phone-call"></i></div>
+                            <div>
+                                <h4>Contact Numbers</h4>
+                                <p>73750-21000<br>92021-00550</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-circle"><i class="ph-fill ph-envelope"></i></div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>info@lifelinehospital.in</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-circle"><i class="ph-fill ph-clock"></i></div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>24×7 Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container glass-card mt-4">
+                        <!-- Placeholder for map -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118933.19792078652!2d81.65706939726563!3d20.8354719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2f3a611993f357%3A0xe97950c4cdad8ed9!2sKurud%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="250" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">
+                        <i class="ph-fill ph-cross icon-logo"></i>
+                        <div class="logo-text">
+                            <span class="brand-name">Life Line</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Advanced Healthcare With Compassion & Excellence. Multi-speciality care in Dhamtari.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#departments">Departments</a></li>
+                        <li><a href="#specialists">Our Doctors</a></li>
+                        <li><a href="#mega-camp">Health Camp</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Patient Care</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="openAppointmentModal()">Book Appointment</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for health tips and updates.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault()">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="ph-bold ph-paper-plane-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Life Line Multispeciality Hospital. All Rights Reserved.</p>
+                <p>Designed with ❤️ for exceptional care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/917375021000" class="float-btn whatsapp" target="_blank" title="Chat on WhatsApp">
+            <i class="ph-fill ph-whatsapp-logo"></i>
+        </a>
+        <a href="tel:7375021000" class="float-btn emergency-call" title="Emergency Call">
+            <i class="ph-fill ph-phone-call"></i>
+        </a>
+        <button id="back-to-top" class="float-btn back-top" title="Back to Top">
+            <i class="ph-bold ph-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Appointment Modal (AI Style) -->
+    <div class="modal-overlay" id="appointmentModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" onclick="closeAppointmentModal()"><i class="ph-bold ph-x"></i></button>
+            <div class="modal-header">
+                <h3>Book an Appointment</h3>
+                <p>Smart Booking System</p>
+            </div>
+            <form id="appointmentForm" class="modal-form">
+                <div class="form-group">
+                    <label>Patient Name</label>
+                    <input type="text" id="appPatientName" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="appPhone" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Department</label>
+                        <select id="appDepartment" required>
+                            <option value="">Select Department</option>
+                            <option>Cardiology</option>
+                            <option>Gynecology</option>
+                            <option>Orthopedics</option>
+                            <option>General Medicine</option>
+                            <option>Eye Care</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" id="appDate" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
