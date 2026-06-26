@@ -45,9 +45,14 @@ app.post('/api/appointment', (req, res) => {
 
 // Fallback route removed for Express 5 compatibility
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`\n========================================================`);
-    console.log(`🚀 Server is running on http://localhost:${PORT}`);
-    console.log(`========================================================\n`);
-});
+// Start the server only if running locally
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`\n========================================================`);
+        console.log(`🚀 Server is running on http://localhost:${PORT}`);
+        console.log(`========================================================\n`);
+    });
+}
+
+// Export the app for Vercel
+module.exports = app;
