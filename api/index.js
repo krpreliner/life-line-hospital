@@ -10,6 +10,11 @@ app.use(cors());
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static files from the public folder when running locally
+if (require.main === module) {
+    app.use(express.static(path.join(__dirname, '../public')));
+}
+
 
 // API Route: Contact Form Submission
 app.post('/api/contact', (req, res) => {
